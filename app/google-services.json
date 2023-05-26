@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "806796518902",
+    "project_id": "oneit-c6974",
+    "storage_bucket": "oneit-c6974.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806796518902:android:5346eb53c7f5f9dcb213d7",
+        "android_client_info": {
+          "package_name": "com.myself.supercart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806796518902-4no3jibdhdmkp8pmh72cf197oqqir60r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOYd1Ie5BpxEonZOCHQmEWYfFUgQEdX2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806796518902-4no3jibdhdmkp8pmh72cf197oqqir60r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
