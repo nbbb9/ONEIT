@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/mainfont"
+        android:text="ONEIT"
+        android:textColor="#EFDC34"
+        android:textSize="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/rfont"
+        android:hint="User ID"
+        android:textColorHint="#59000000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/userpassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/rfont"
+        android:hint="User Password"
+        android:inputType="textPassword"
+        android:textColorHint="#59000000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userid" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundround"
+        android:fontFamily="@font/rfont"
+        android:text="로그인"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userpassword" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:checked="false"
+        android:fontFamily="@font/rfont"
+        android:text="로그인 유지"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="106dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundround"
+        android:fontFamily="@font/rfont"
+        android:text="아이디 찾기"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="106dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundround"
+        android:fontFamily="@font/rfont"
+        android:text="비밀번호 찾기"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="106dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/roundround"
+        android:fontFamily="@font/rfont"
+        android:text="회원가입"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="690dp"
+        android:fontFamily="@font/rfont"
+        android:text="By 혜윰"
+        android:textColor="#63000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

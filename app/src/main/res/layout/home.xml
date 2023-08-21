@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeActivity">
+
+    <TextView
+        android:id="@+id/hellouser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:text = "ONEIT"
+        android:fontFamily="@font/mainfont"
+        android:gravity="center"
+        android:textColor="#EFDC34"
+        android:textSize="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/settingbtn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/basketbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageButton
+        android:id="@+id/basketbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/paymentbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/basket" />
+
+    <ImageButton
+        android:id="@+id/paymentbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/userbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/payment" />
+
+    <ImageButton
+        android:id="@+id/userbtn"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="15dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rfont"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hellouser"
+        app:queryHint="검색어를 입력하세요"
+        app:searchIcon="@drawable/search_ic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rfont"
+        android:text="오늘의 상품!"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ListView
+            android:id="@+id/things_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

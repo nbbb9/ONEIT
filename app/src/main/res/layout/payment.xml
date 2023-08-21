@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paymentActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/bold"
+        android:text="결제하기"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="카트에 담긴 물건"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:fontFamily="@font/rfont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginTop="100dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ListView
+            android:id="@+id/my_cart_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/합계"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="100dp"
+        android:text="합계="
+        android:textSize="20dp"
+        android:fontFamily="@font/rfont"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sum_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="총합"
+        android:textSize="20dp"
+        android:fontFamily="@font/rfont"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/합계" />
+
+    <TextView
+        android:id="@+id/원"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="원"
+        android:textSize="20dp"
+        android:fontFamily="@font/rfont"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sum_price" />
+
+    <TextView
+        android:id="@+id/총수량"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/rfont"
+        android:text="총수량="
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/합계" />
+
+    <TextView
+        android:id="@+id/sum_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/rfont"
+        android:text="개수"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/총수량"
+        app:layout_constraintTop_toBottomOf="@+id/sum_price" />
+
+    <TextView
+        android:id="@+id/개"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/rfont"
+        android:text="개"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/sum_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/원" />
+
+    <Button
+        android:id="@+id/buybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        android:text="구매하기"
+        android:textSize="20dp"
+        android:background="@drawable/roundround"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

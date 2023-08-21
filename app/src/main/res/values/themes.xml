@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SuperCart" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#FFEB3B</item>
+        <item name="colorPrimaryDark">#FFEB3B</item>
+        <item name="colorAccent">#03A9F4</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".thankyouActivity">
+
+    <TextView
+        android:id="@+id/hellouser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="288dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="결제가 \n완료되었습니다.\n\n감사합니다!"
+        android:textColor="#EFDC34"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gohome"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/roundround"
+        android:fontFamily="@font/rfont"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:scaleType="fitCenter"
+        android:text="메인화면으로 돌아가기"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hellouser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
